@@ -1,0 +1,62 @@
+.header {
+   height: 100px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   z-index: 100;
+
+&__container{
+   width: 1200px;
+}
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      
+   }
+
+   &__social {
+      display: flex;
+      column-gap: 15px;
+      svg{
+         width: 24px;
+         height: 24px;
+      }
+   }
+
+   &__social-wup {
+   }
+
+   &__social-inst {
+   }
+
+   &__social-telegram {
+   }
+
+   &__schedule {
+   }
+
+   &__tell {
+   }
+
+   &__call {
+   }
+
+   &__bottom {
+   }
+}
+.container {
+}
+.logo {
+   position: relative;
+   
+   svg{
+      height: 70px;
+      width: 70px;
+   }
+}
+
