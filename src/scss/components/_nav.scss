@@ -1,6 +1,4 @@
 .header {
-   background-color: transparent;
-
    &__bottom {
       padding: 5px 0;
    }
@@ -9,7 +7,6 @@
    }
 }
 .nav {
-
    &__list {
       display: flex;
       justify-content: space-between;
