@@ -17,5 +17,12 @@
    }
 
    &__link {
+      color: var(--color-text);
+      padding-bottom: 5px;
+      &:hover {
+         color: var(--color-accent);
+         border-bottom: 2px solid var(--color-accent);
+         transition: all 0.3s;
+      }
    }
 }
