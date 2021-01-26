@@ -1,0 +1,55 @@
+.gallery {
+    &__title {
+        margin: 20px;
+    }
+
+    &__text {
+        padding: 0 35px;
+        line-height: 21px;
+        margin-bottom: 40px;
+    }
+}
+.container {
+}
+
+.grid {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 20px;
+    &__item {
+    }
+}
+
+.grid__item a img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid__item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+a:hover:before,
+a:hover:after {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.grid__item {
+    position: relative;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.5);
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s;
+    }
+}
