@@ -1,0 +1,132 @@
+.tabs {
+    font-size: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs > input[type="radio"] {
+    display: none;
+}
+
+.tabs > div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    border: 1px solid #e0e0e0;
+    padding: 30px 15px;
+    font-size: 14px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 40px;
+    line-height: 1.2;
+}
+
+.tabs > label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 8px 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    &:hover {
+        color: var(--color-accent);
+        transition: all 0.3s;
+    }
+}
+
+.tabs > label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs > input[type="radio"]:checked + label {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.accessory {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__tab {
+    }
+}
+.tab {
+    &__col-1 {
+        text-align: center;
+    }
+
+    &__img {
+        margin-bottom: 15px;
+    }
+
+    &__info {
+        margin-bottom: 15px;
+    }
+
+    &__price {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--color-accent);
+    }
+
+    &__col-2 ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    &__col-2 ul li {
+        position: relative;
+        line-height: 1.5;
+    }
+    &__col-2 ul li:before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -16px;
+        height: 10px;
+        width: 10px;
+        background-color: var(--color-accent);
+    }
+
+    &__col-3 {
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 32px;
+        color: var(--color-accent);
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    &__warranty {
+        position: relative;
+        padding: 10px 15px;
+        border: 2px solid var(--color-accent);
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        &::before {
+            content: url(/img/ribbon.svg);
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
