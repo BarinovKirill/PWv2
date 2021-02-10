@@ -107,3 +107,36 @@ header.sticky button {
    border-color: var(--color-white);
    transition: 0.6s;
 }
+
+// .menu-burger__header span,
+// .menu-burger__header:after,
+// .menu-burger__header:before {
+//    height: 3px;
+//    width: 100%;
+//    position: absolute;
+//    background: #515758;
+//    margin: 0 auto;
+// }
+// .menu-burger__header span {
+//    top: 16px;
+// }
+// .menu-burger__header:after,
+// .menu-burger__header:before {
+//    content: "";
+// }
+// .menu-burger__header:after {
+//    bottom: 5px;
+// }
+// .menu-burger__header:before {
+//    top: 5px;
+// }
+
+// @media (max-width: 767px) {
+//    .menu-burger__header {
+//       position: relative;
+//       width: 40px;
+//       height: 35px;
+//       display: block;
+//       margin-left: 10px;
+//    }
+// }
