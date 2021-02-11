@@ -96,6 +96,10 @@ nav.header__nav ul li a:hover:after {
 }
 
 @media (max-width: 991px) {
+  .header__bottom{
+    display: flex;
+    justify-content: flex-end;
+  }
   .burger {
     display: block;
   }
