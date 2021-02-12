@@ -61,3 +61,9 @@
         transition: all 0.3s;
     }
 }
+
+@media (max-width: 599px) {
+    .grid__item:nth-child(n + 4) {
+        display: none;
+    }
+}

@@ -20,5 +20,5 @@ const menu = document.querySelector('.nav'),
     overlay.addEventListener('click', () => {
         menu.classList.remove('open');
         overlay.classList.remove('open');
-        lockScroll();
+        unlockScroll();
     });
