@@ -100,3 +100,9 @@ h6 {
   top: -125px;
   visibility: hidden;
 }
+
+@media (max-width: 991px){
+  .anchor{
+    top: -75px;
+  }
+}
